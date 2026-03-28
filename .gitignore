@@ -1,0 +1,11 @@
+# ignore default and generated configurations
+atuin/atuin-receipt.json
+tmux/plugins/
+nvim/lazy-lock.json
+nvim/lazyvim.json
+nvim/.neoconf.json
+zsh/.zcompdump*
+zsh/.zsh_history
+zsh/.zprofile
+htop/
+homebrew/

@@ -1,0 +1,18 @@
+[user]
+	email = victor.miclotte@gmail.com
+	name = vmiclott
+[core]
+	editor = nvim
+  pager = less -FX
+[color]
+	ui = auto
+[push]
+	default = simple
+	autoSetupRemote = true
+[pull]
+	rebase = true
+[alias]
+	dag = log --graph --format='%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+	co = checkout
+	cp = cherry-pick
+	pushfwl = push --force-with-lease
