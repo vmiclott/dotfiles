@@ -12,6 +12,7 @@ for dir in \
   /opt/homebrew/bin \
   $HOME/.opencode/bin \
   $HOME/.local/bin \
+  $HOME/.local/share/mise/shims \
 ; do
   [[ -d $dir ]] && export PATH="$dir:$PATH"
 done
