@@ -42,6 +42,9 @@ return {
         "rubocop",
         "rubyfmt",
 
+        -- Typst
+        "tinymist",
+
         -- Utilities
         "shellcheck",
         "cspell-lsp",
