@@ -22,6 +22,7 @@ return {
         -- Java
         "jdtls",
         "java-debug-adapter",
+        "java-test",
 
         -- JavaScript/TypeScript
         "vtsls",
