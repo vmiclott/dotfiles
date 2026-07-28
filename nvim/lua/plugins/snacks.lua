@@ -21,7 +21,7 @@ return {
       local Tree = require("snacks.explorer.tree")
       local expand = Tree.expand
 
-      -- Auto-expand directories that contain no files
+      -- Auto-expand directories that have exactly one fileless subdirectory (compactible chains)
       function Tree:expand(node)
         expand(self, node)
         local function recurse(n)
@@ -33,12 +33,11 @@ return {
               table.insert(files, child)
             end
           end
-          if #files == 0 and #dirs > 0 then
-            for _, dir in ipairs(dirs) do
-              dir.open = true
-              expand(self, dir)
-              recurse(dir)
-            end
+          if #files == 0 and #dirs == 1 then
+            local dir = dirs[1]
+            dir.open = true
+            expand(self, dir)
+            recurse(dir)
           end
         end
         recurse(node)
