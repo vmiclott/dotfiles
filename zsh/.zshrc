@@ -32,3 +32,8 @@ fi
 if command -v mise &> /dev/null; then
   eval "$(mise activate zsh)"
 fi
+
+# AWS — login via SSO and persist AWS_PROFILE into this shell
+if command -v aws-assume &> /dev/null; then
+  aws-assume() { eval "$(command aws-assume "$@")" }
+fi
