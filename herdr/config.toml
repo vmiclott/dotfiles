@@ -44,3 +44,22 @@ new_cwd = "follow"
 [ui]
 mouse_capture = true
 copy_on_select = true
+
+[theme]
+name = "catppuccin"
+
+[theme.custom]
+text = "#cad3f5"
+surface_dim = "#1e2030"
+accent = "#8aadf4"
+blue = "#8aadf4"
+green = "#a6da95"
+red = "#ed8796"
+yellow = "#eed49f"
+peach = "#f5a97f"
+mauve = "#c6a0f6"
+teal = "#8bd5ca"
+sidebar_bg = "#1e2030"
+active_row_bg = "#24273a"
+selection_bg = "#363a4f"
+panel_bg = "reset"
