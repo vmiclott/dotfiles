@@ -9,3 +9,9 @@ zsh/.zsh_history
 zsh/.zprofile
 htop/
 homebrew/
+herdr/*.log
+herdr/*.sock
+herdr/session.json
+herdr/session-snapshots/
+herdr/sessions/
+herdr/.plugins.lock
