@@ -37,3 +37,10 @@ key = "prefix+K"
 type = "shell"
 description = "Split down and move the new pane up"
 command = '''id=$("$HERDR_BIN_PATH" pane split --pane "$HERDR_ACTIVE_PANE_ID" --direction down --focus | sed -E 's/.*"pane_id":"([^"]+)".*/\1/'); [ -n "$id" ] && "$HERDR_BIN_PATH" pane swap --pane "$id" --direction up'''
+
+[terminal]
+new_cwd = "follow"
+
+[ui]
+mouse_capture = true
+copy_on_select = true
