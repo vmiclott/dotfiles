@@ -166,6 +166,16 @@ Wayland status bar with Catppuccin styling.
 | Clock      | Shows full date on click |
 | Brightness | Scroll to adjust         |
 
+## Bluetooth headset
+
+The `mpris-proxy` user service is enabled so the Bluetooth headset's media
+buttons (play/pause, next, previous) control MPRIS players such as Chromium and
+YouTube Music. Requires `bluez-utils`.
+
+```sh
+systemctl --user enable --now mpris-proxy
+```
+
 ## Flameshot
 
 | Setting        | Value            |
