@@ -13,6 +13,7 @@ for dir in \
   $HOME/.opencode/bin \
   $HOME/.local/bin \
   $HOME/.local/share/mise/shims \
+  $HOME/.cargo/bin \
 ; do
   [[ -d $dir ]] && export PATH="$dir:$PATH"
 done
